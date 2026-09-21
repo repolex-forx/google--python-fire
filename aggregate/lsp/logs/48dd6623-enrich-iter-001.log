@@ -1,0 +1,15 @@
+[2026-09-21T01:06:45Z] === ENRICH ITERATION 1 START | repo=google/python-fire sha=48dd6623 ===
+[2026-09-21T01:06:45Z] [iter=1] PHASE START: enrich repo=google/python-fire sha=48dd6623 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/48dd6623-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/48dd6623bfeb8635082cdecb0f87e75d3a9c4672.nq.gz
+[2026-09-21T01:06:45Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-21T01:06:46Z] [iter=1] AST store loaded triples=148148 load_secs=1 mem_mb=283 MB
+[2026-09-21T01:06:46Z] [iter=1] Step 2: Finding LSP targets mem_mb=283 MB
+[2026-09-21T01:06:46Z] [iter=1] LSP targets found call_sites=1316 imports=0 extends=0 implements=0 secs=0
+[2026-09-21T01:06:47Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=283 MB
+[2026-09-21T01:06:47Z] [iter=1] Position index built positions=10480 nodes_with_types=13520 secs=1 mem_mb=283 MB
+[2026-09-21T01:06:47Z] [iter=1] Step 3: Starting LSP resolution mem_mb=283 MB already_completed_types=[] already_completed_files=0
+[2026-09-21T01:06:47Z] [iter=1] Resolving target type target_type=call_site count=1316
+[2026-09-21T01:07:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=7 resolved=385 errors=326 current=fire/helputils.py
+[2026-09-21T01:07:30Z] [iter=1] Target type resolved target_type=call_site resolved=733 errors=470 secs=43 mem_mb=283 MB
+[2026-09-21T01:07:32Z] [iter=1] Step 5: Writing final enrichment file triples=11384
+[2026-09-21T01:07:33Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/48dd6623bfeb8635082cdecb0f87e75d3a9c4672.nq.gz size_kb=181
+[2026-09-21T01:07:33Z] [iter=1] PHASE END: enrich elapsed_s=48 elapsed_min=0.8 total_triples=11384
